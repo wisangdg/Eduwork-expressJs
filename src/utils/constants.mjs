@@ -1,14 +1,64 @@
 export const mockUsers = [
-  { id: 1, username: "prabowo", displayName: "Prabowo" },
-  { id: 2, username: "anies", displayName: "Anies" },
-  { id: 3, username: "ganjar", displayName: "Ganjar" },
-  { id: 4, username: "jokowi", displayName: "Jokowi" },
-  { id: 5, username: "megawati", displayName: "Megawati" },
-  { id: 6, username: "sby", displayName: "SBY" },
-  { id: 7, username: "habibie", displayName: "Habibie" },
-  { id: 8, username: "soeharto", displayName: "Soeharto" },
-  { id: 9, username: "sukarno", displayName: "Sukarno" },
-  { id: 10, username: "gusdur", displayName: "Gus Dur" },
+  {
+    id: 1,
+    username: "prabowo",
+    displayName: "Prabowo Subianto",
+    password: "password1",
+  },
+  {
+    id: 2,
+    username: "anies",
+    displayName: "Anies Baswedan",
+    password: "password2",
+  },
+  {
+    id: 3,
+    username: "ganjar",
+    displayName: "Ganjar Pranowo",
+    password: "password3",
+  },
+  {
+    id: 4,
+    username: "jokowi",
+    displayName: "Joko Widodo",
+    password: "password4",
+  },
+  {
+    id: 5,
+    username: "megawati",
+    displayName: "Megawati Soekarnoputri",
+    password: "password5",
+  },
+  {
+    id: 6,
+    username: "sby",
+    displayName: "Susilo Bambang Yudhoyono",
+    password: "password6",
+  },
+  {
+    id: 7,
+    username: "habibie",
+    displayName: "B.J. Habibie",
+    password: "password7",
+  },
+  {
+    id: 8,
+    username: "soeharto",
+    displayName: "Soeharto",
+    password: "password8",
+  },
+  {
+    id: 9,
+    username: "sukarno",
+    displayName: "Sukarno",
+    password: "password9",
+  },
+  {
+    id: 10,
+    username: "gusdur",
+    displayName: "Abdurrahman Wahid",
+    password: "password10",
+  },
 ];
 
 export const mockProducts = [

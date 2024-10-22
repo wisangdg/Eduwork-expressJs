@@ -11,8 +11,11 @@ const router = Router();
 
 router.get(
   "/api/users",
-  checkSchema(getUserValidationSchema),
+  // checkSchema(getUserValidationSchema),
   (request, response) => {
+    // request.session.visited = true;
+    console.log(request.session);
+    console.log(request.session.id);
     const errors = validationResult(request);
     console.log(errors);
     const {
@@ -64,10 +67,15 @@ router.patch("/api/users/:id", resolveIndexById, (request, response) => {
   mockUsers[findUserIndex] = { ...mockUsers[findUserIndex], ...body };
 });
 
-router.delete("/api/users/:id", (request, response, resolveIndexById) => {
-  const { findUserIndex } = request;
-  mockUsers.splice(findUserIndex, 1);
-  return response.status(200);
-});
+router.delete("/api/users/:id", (request, response) => {
+  const userId = parseInt(request.params.id, 10);
+  const findUserIndex = mockUsers.findIndex((user) => user.id === userId);
 
+  if (findUserIndex !== -1) {
+    mockUsers.splice(findUserIndex, 1);
+    return response.status(200).json({ message: "User deleted successfully" });
+  } else {
+    return response.status(404).json({ message: "User not found" });
+  }
+});
 export default router;
