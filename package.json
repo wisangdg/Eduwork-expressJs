@@ -2,11 +2,11 @@
   "name": "expressjs",
   "version": "1.0.0",
   "description": "",
-  "main": "./src/app.mjs",
+  "main": "./src/index.mjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start:dev": "nodemon ./src/app.mjs",
-    "start": "node ./src/app.mjs"
+    "start:dev": "nodemon ./src/index.mjs",
+    "start": "node ./src/index.mjs"
   },
   "author": "wisang",
   "license": "ISC",
