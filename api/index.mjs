@@ -1,9 +1,9 @@
 import express from "express";
-import routes from "./routes/index.mjs";
+import routes from "../src/routes/index.mjs";
 import cookieParser from "cookie-parser";
 import session from "express-session";
 import passport from "passport";
-import "./strategies/local-strategy.mjs";
+import "../src/strategies/local-strategy.mjs";
 
 const app = express();
 
